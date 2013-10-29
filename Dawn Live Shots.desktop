@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Icon[en_US]=chromium-browser
+Exec=chromium-browser http://dawn.jpl.nasa.gov/mission/live_shots.asp
+Name[en_US]=Dawn Live Shots
+Terminal=false
+Name=Dawn Live Shots
+Icon=chromium-browser
