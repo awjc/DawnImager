@@ -1,6 +1,7 @@
 #Ignore all the image stuff
 *.jpg
 *.png
+*.png2
 *.mpg
 *.mov
 *.mp4
