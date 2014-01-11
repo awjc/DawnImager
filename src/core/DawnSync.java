@@ -78,8 +78,13 @@ public class DawnSync {
 					return name.endsWith(".png") || name.endsWith(".jpg");
 				}
 			};
-			srcFiles = Arrays.asList(new File(srcDir + name).list(filter));
-			destFiles = Arrays.asList(new File(destDir + name).list(filter));
+			String[] fileList = new File(srcDir + name).list(filter);
+			Arrays.sort(fileList);
+			srcFiles = Arrays.asList(fileList);
+			
+			fileList = new File(destDir + name).list(filter);
+			Arrays.sort(fileList);
+			destFiles = Arrays.asList(fileList);
 		} catch(Exception e){
 			e.printStackTrace();
 			System.err.println("Error indexing files");

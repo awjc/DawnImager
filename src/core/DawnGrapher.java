@@ -15,13 +15,13 @@ import java.util.Scanner;
 import java.util.TimeZone;
 
 public class DawnGrapher {
-	private static String graphdir = "/home/adam/Dropbox/Matlab/DawnGrapher/";
-	private static String[] imgdirs = { "/home/adam/Dropbox/Java_Projects/DawnImager/Images_Before_November/",
-			"/home/adam/Dropbox/Java_Projects/DawnImager/Images/" };
+//	private static String graphdir = "/home/adam/Dropbox/Matlab/DawnGrapher/";
+//	private static String[] imgdirs = { "/home/adam/Dropbox/Java_Projects/DawnImager/Images_Before_November/",
+//			"/home/adam/Dropbox/Java_Projects/DawnImager/Images/" };
 	
-//	private static String graphdir = "C:/Users/Adam/Dropbox/Matlab/DawnGrapher/";
-//	private static String[] imgdirs = { "C:/Users/Adam/Dropbox/Java_Projects/DawnImager/Images_Before_November/",
-//			"C:/Users/Adam/Dropbox/Java_Projects/DawnImager/Images/" };
+	private static String graphdir = "C:/Users/Adam/Dropbox/Matlab/DawnGrapher/";
+	private static String[] imgdirs = { "C:/Users/Adam/Dropbox/Java_Projects/DawnImager/Images_Before_November/",
+			"C:/Users/Adam/Dropbox/Java_Projects/DawnImager/Images/" };
 
 	private static boolean USE_MILES = true;
 
@@ -195,6 +195,10 @@ public class DawnGrapher {
 		int idx = date.indexOf("2012");
 		if(idx < 0){
 			idx = date.indexOf("2013");
+		} if(idx < 0){
+			idx = date.indexOf("2014");
+		} if(idx < 0){
+			idx = date.indexOf("2015");
 		}
 
 		if(idx != 0){
